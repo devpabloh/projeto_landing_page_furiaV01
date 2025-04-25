@@ -24,7 +24,7 @@ const Settings = () => {
     return (
         <>
             <button className={styles.settingsButton} onClick={toggleSettings} aria-label="Configurações">
-                <img src={Engrenagem} alt="" />
+                <img src={Engrenagem} alt="" className={styles.configImg} />
             </button>
             {showSettings && (
                 <div className={styles.settingsMenu}>

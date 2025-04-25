@@ -1,0 +1,40 @@
+
+.containerGeneral{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.containerGames{
+  display: flex;
+  padding: 1rem;
+}
+
+.containerGames{
+  display: flex;
+  align-items: center;
+  flex-direction: space-between;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 20px;
+  background-color: grey;
+  gap: .5rem;
+}
+
+.cardGames{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+  
+}
+
+.cardGames img{
+  width: 50px;
+}
+
+.gameInfo{
+  display: flex;
+  align-items: center;
+  flex-direction: center;
+}

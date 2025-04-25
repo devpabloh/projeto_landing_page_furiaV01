@@ -19,6 +19,10 @@ const resources = {
             "language": "Language",
             "english": "English",
             "portuguese": "Portuguese",
+            "carousel.previous": "Previous slide",
+            "carousel.next": "Next slide",
+            "carousel.goToSlide": "Go to slide {{index}}",
+            "carousel.imageAlt": "Slide {{index}}",
         }
     },
     pt: {
@@ -37,6 +41,10 @@ const resources = {
             "language": "Idioma",
             "english": "Inglês",
             "portuguese": "Português",
+            "carousel.previous": "Slide anterior",
+            "carousel.next": "Próximo slide",
+            "carousel.goToSlide": "Ir para o slide {{index}}",
+            "carousel.imageAlt": "Slide {{index}}",
         }
     }
 };

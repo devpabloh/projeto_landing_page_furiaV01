@@ -1,0 +1,129 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carouselInner {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: unset;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.activeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: none;
+  transition: filter 0.5s ease;
+}
+
+.inactiveImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(5px) brightness(0.7);
+  transition: filter 0.5s ease;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.arrowLeft {
+  left: 20px;
+}
+
+.arrowRight {
+  right: 20px;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.indicator:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.activeIndicator {
+  background: white;
+}
+
+/* Estilo para tema escuro */
+[data-theme="dark"] .arrow {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+[data-theme="dark"] .arrow:hover {
+  background: rgba(255, 255, 255, 0.8);
+} 

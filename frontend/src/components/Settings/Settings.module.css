@@ -27,7 +27,7 @@
 .settingsMenu{
     position: absolute;
     top: 80px;
-    right: 325px;
+    right: 359px;
     transform: translateX(-50%);
     background-color: #000;
     border-radius: 8px;
@@ -36,6 +36,7 @@
     min-width: 200px;
     z-index: 1000;
     margin-top: 8px;
+    
 }
 
 .settingsMenu::before{
@@ -115,7 +116,7 @@
 
 [data-theme="dark"] .settingsButton img,
 [data-theme="dark"] .themeToggle img {
-    filter: invert(100%); /* Inverte para branco no tema dark */
+    filter: invert(100%); 
 }
 
 /* Responsividade */
