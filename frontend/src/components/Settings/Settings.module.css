@@ -1,0 +1,147 @@
+.settingsButton{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+.settingsButton:hover{
+    transform: rotate(30deg);
+}
+
+.settingsButton img{
+    width: 24px;
+    height: 24px;
+}
+
+.settingsButton img,
+.themeToggle img {
+    filter: invert(0%); /* Mantém a cor original no tema light */
+}
+
+.settingsMenu{
+    position: absolute;
+    top: 80px;
+    right: 325px;
+    transform: translateX(-50%);
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    min-width: 200px;
+    z-index: 1000;
+    margin-top: 8px;
+}
+
+.settingsMenu::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+}
+
+.settingsSection {
+    margin-bottom: 16px;
+}
+
+.settingsSection:last-child {
+    margin-bottom: 0;
+}
+
+.settingsSection h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+}
+
+.themeToggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: none;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.themeToggle:hover {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.themeToggle img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+[data-theme="dark"] .settingsMenu {
+    background-color: #333;
+    color: #fff;
+}
+
+[data-theme="dark"] .settingsMenu::before {
+    border-bottom-color: #333;
+}
+
+[data-theme="dark"] .settingsSection h4 {
+    color: #ccc;
+}
+
+[data-theme="dark"] .themeToggle {
+    border-color: #555;
+    color: #fff;
+    background-color: #444;
+}
+
+[data-theme="dark"] .themeToggle:hover {
+    background-color: #555;
+}
+
+[data-theme="dark"] .settingsButton img,
+[data-theme="dark"] .themeToggle img {
+    filter: invert(100%); /* Inverte para branco no tema dark */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .settingsMenu {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+        margin-top: 0;
+        animation: slideUp 0.3s ease;
+    }
+    
+    .settingsMenu::before {
+        display: none;
+    }
+    
+    @keyframes slideUp {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+}

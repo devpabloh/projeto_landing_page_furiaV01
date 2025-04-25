@@ -1,32 +1,25 @@
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import styles from "./Settings.module.css";
+import { useTheme } from "../../context/ThemeContext";
 
 /* imagens */
 import Engrenagem from "../../assets/navbar/engrenagem.svg"
 import Lua from "../../assets/navbar/lua.svg"
 import Sol from "../../assets/navbar/sol.svg"
+import LanguageSeletor from "./SeletorLanguage/SeletorLanguage";
 
 const Settings = () => {
     const [showSettings, setShowSettings] = useState(false);
-
-    const [theme, setTheme] = useState('light');
-
-    const [language, setLanguage] = useState('pt-br')
+    const { t } = useTranslation();
+    const { theme, toggleTheme } = useTheme();
 
     const toggleSettings = ()=>{
         setShowSettings(!showSettings)
     }
-
-    const toggleTheme = ()=>{
-        const newTheme = theme === 'light' ? 'dark' : 'light'
-        setTheme(newTheme)
-
-        document.documentElement.setAttribute('data-theme', newTheme)
-    }
-
-    const changeLanguage = (lang: string)=>{
-        setLanguage(lang)
-    }
+    
+    const nextThemeKey = theme === 'light' ? 'dark' : 'light';
+    const translatedNextThemeName = t(nextThemeKey);
 
     return (
         <>
@@ -36,13 +29,13 @@ const Settings = () => {
             {showSettings && (
                 <div className={styles.settingsMenu}>
                     <div className={styles.settingsSection}>
-                        <h4>Tema</h4>
-                        <button className={styles.themeToggle} onClick={toggleTheme} aria-label={theme === 'light' ? 'Mudar para tema escuro' : 'Mudar para tema claro'}>
-                            {theme === 'light'? (<img src={Lua} alt="Lua"></img>) : (<img src={Sol} alt="Sol"></img>)}
-                            <span>{theme === 'light' ? 'dark' : 'light'}</span>
+                        <h4>{t('themeTitle')}</h4>
+                        <button className={styles.themeToggle} onClick={toggleTheme} aria-label={t('changeTheme', { theme: translatedNextThemeName })}>
+                            {theme === 'light'? (<img src={Lua} alt={t('moonAlt')}></img>) : (<img src={Sol} alt={t('sunAlt')}></img>)}
+                            <span>{translatedNextThemeName}</span>
                         </button>
                     </div>
-
+                    <LanguageSeletor/>
                 </div>
             )}
         </>
