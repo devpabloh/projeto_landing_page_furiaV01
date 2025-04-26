@@ -7,8 +7,6 @@ import styles from "./HighlightsOfTheWeek.module.css"
 import furiaLogo from '../../assets/teams/furiaEsportsLogo.png';
 import loudLogo from '../../assets/teams/loudEsportsLogo.png';
 
- 
-
 interface GamesItem{
   championship: string;
   teamOne: string;

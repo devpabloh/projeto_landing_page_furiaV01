@@ -23,10 +23,21 @@ const resources = {
             "carousel.next": "Next slide",
             "carousel.goToSlide": "Go to slide {{index}}",
             "carousel.imageAlt": "Slide {{index}}",
+            "upcomingChampionshipsTitle": "Upcoming Championships",
+            "upcomingChampionshipsMothMay": "May",
+            "upcomingChampionshipsMothMarch": "March",
+            "upcomingChampionshipsMothApril": "April",
+            "upcomingChampionshipsClassification": "Classification",
+            "upcomingChampionshipsGroup": "Group",
+            "toAccompany": "To accompany",
+            "OfficialUniformAndAccessories": "Official Uniform and Accessories",
+            "AccessTheStore": "Access the store",
+            
         }
     },
     pt: {
         translation: {
+            
             "navbar.logoAlt": "Logotipo Fúria E-sports",
             "navbar.home": "Inicio",
             "navbar.carrer": "Carreira",
@@ -45,6 +56,15 @@ const resources = {
             "carousel.next": "Próximo slide",
             "carousel.goToSlide": "Ir para o slide {{index}}",
             "carousel.imageAlt": "Slide {{index}}",
+            "upcomingChampionshipsTitle": "Próximos Campeonatos",
+            "upcomingChampionshipsMothMay": "Maio",
+            "upcomingChampionshipsMothMarch": "Março",
+            "upcomingChampionshipsMothApril": "Abril",
+            "upcomingChampionshipsClassification": "Classificação",
+            "upcomingChampionshipsGroup": "Grupo",
+            "toAccompany": "Acompanhar",
+            "OfficialUniformAndAccessories": "Uniforme Oficial e Acessórios",
+            "AccessTheStore": "Acessar a loja",
         }
     }
 };
