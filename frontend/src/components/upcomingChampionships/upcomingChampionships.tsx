@@ -1,3 +1,6 @@
+/* Hooks */
+import { useState } from "react";
+
 /* CSS */
 import styles from "./UpcomingChampionships.module.css";
 
@@ -10,7 +13,8 @@ import ESLProLeague from "../../assets/Championships/ESLProLeague.png";
 import logoPglCluj from "../../assets/Championships/logoPglCluj.webp";
 
 /* Imagens camisas */
-import uniform from "../../assets/uniforms/furia1.webp";
+import DarkUniform from "../../assets/uniforms/furia1.webp";
+import LightUniform from "../../assets/uniforms/CamisaFuriaBranca.png"
 
 interface upcomingChampionshipsItem{
     logoChampionship: string;
@@ -58,6 +62,8 @@ const upcomingChampionshipsData: upcomingChampionshipsItem[] = [
 const UpcomingChampionships = ()=>{
     const { t } = useTranslation();
 
+    const [isHovering, setIsHovering] = useState(true);
+
     return (
         <div className={styles.containerUpcomingChampionships}>
             <div className={styles.containerInfoUpcomingChampionships}>
@@ -74,8 +80,11 @@ const UpcomingChampionships = ()=>{
                 <p><a href="">{t("toAccompany")}</a></p>
             </div>
             <div className={styles.containerLoja}>
-                <div>
-                    <img src={uniform} alt="" />
+                <div 
+                onMouseEnter={()=>setIsHovering(true)}
+                onMouseLeave={()=>setIsHovering(false)}
+                >
+                    <img src={isHovering ? DarkUniform : LightUniform } alt="" className={styles.imageUniform} />
                 </div>
                 <div className={styles.containerLojaInfo}>
                     <p>{t("OfficialUniformAndAccessories")}</p>

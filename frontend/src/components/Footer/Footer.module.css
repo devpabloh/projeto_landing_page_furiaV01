@@ -1,0 +1,15 @@
+.containerFooter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--size-xm);
+}
+
+.containerFooter p {
+  margin: 0 auto;
+}
+
+.containerRedesSociais img {
+  width: 50px;
+  filter: drop-shadow(0px 0px 2px #fff);
+}

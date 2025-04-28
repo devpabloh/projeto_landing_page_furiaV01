@@ -11,6 +11,7 @@ import Home from './pages/Home/Home'
 /* Componentes */
 import Header from './components/Header/Header'
 import Carousel from './components/Carousel/Carousel'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
         </Routes>
+        <Footer/>
       </ThemeProvider>
     </BrowserRouter>
   )

@@ -56,7 +56,7 @@ const HighlightsOfTheWeek = () =>{
 
   return(
     <section className={styles.containerHighlightsOfTheWeek}>
-      <h2>Destaques da semana</h2>
+      <h2>{t("HighlightsOfTheWeek")}</h2>
       <div className={styles.containerGeneral}>
         {games.map((game, index) => (
           <div key={index} className={styles.containerGames}>

@@ -69,7 +69,7 @@
   color: white;
   border: none;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: var(--size-xm);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,20 +83,20 @@
 }
 
 .arrowLeft {
-  left: 20px;
+  left: var(--size-xm);
 }
 
 .arrowRight {
-  right: 20px;
+  right: var(--size-xm);
 }
 
 .indicators {
   position: absolute;
-  bottom: 20px;
+  bottom: var(--size-lg);
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: var(--size-xm);
   z-index: 2;
 }
 

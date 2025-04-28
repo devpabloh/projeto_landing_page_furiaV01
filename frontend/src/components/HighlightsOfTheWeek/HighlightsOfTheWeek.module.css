@@ -1,5 +1,10 @@
+.containerHighlightsOfTheWeek{
+  padding: var(--size-md);
+  height: 250px;
+}
 
 .containerGeneral{
+  margin-top: var(--size-md);
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
@@ -7,7 +12,7 @@
 
 .containerGames{
   display: flex;
-  padding: 1rem;
+  padding: var(--size-md);
 }
 
 .containerGames{
@@ -16,15 +21,16 @@
   flex-direction: space-between;
   flex-direction: column;
   width: 300px;
-  border-radius: 20px;
-  background-color: grey;
-  gap: .5rem;
+  border-radius: var(--size-md);
+  background-color: var(--one-color);
+  color: var(--two-color);
+  gap: var(--size-sm);
 }
 
 .cardGames{
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--size-md);
   
   
 }

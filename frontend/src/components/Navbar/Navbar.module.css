@@ -2,12 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 1rem 1.5rem;
+    gap: var(--size-xl);
+    padding: var(--size-md) var(--size-lg);
 }
 
 .listItemImage{
-    width: 4rem;
+    width: 64px;
 }
 
 .listItemImage:hover{

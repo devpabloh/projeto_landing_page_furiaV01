@@ -4,7 +4,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    border-radius: 20px;
+    border-radius: var(--size-sm);
     padding: 8px 12px;
     cursor: pointer;
 }

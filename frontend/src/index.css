@@ -6,6 +6,15 @@
   --one-color:#000;
   --two-color: #fff;
   --three-color:#ffff00;
+  --four-color: #1a1a1a;
+
+  --size-sm: .5rem;
+  --size-md:1rem;
+  --size-xm:1.25rem;
+  --size-lg:1.5rem;
+  --size-xl:2rem;
+  --size-xxl:2.5rem;
+  
 
   color-scheme: light dark;
   color: var(--one-color);
@@ -45,23 +54,10 @@ li{
 }
 
 [data-theme="dark"]{
-  background-color: #1a1a1a;
+  background-color: var(--four-color);
   color: var(--two-color);
 }
 
 [data-theme="dark"] a:hover {
   filter: drop-shadow(0 4px 10px rgb(255, 255, 255))
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

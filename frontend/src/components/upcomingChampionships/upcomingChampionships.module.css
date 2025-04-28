@@ -35,21 +35,34 @@
 }
 
 .containerLoja{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 500px;
 }
 
-.containerLojaInfo{
-    color: var(--one-color);
-}
-
-.containerLoja img{
-    width: 100%;
-    height: 100%;
+.imageUniform{
+    transition: all 0.3s ease;
+    width: 450px;
+    height: 580px;
     object-fit: contain;
 }
 
+.imageUniform:hover{
+    cursor: pointer;
+}
+
+.containerLojaInfo{
+    cursor: pointer;
+    color: var(--one-color);
+}
+
+.containerLojaInfo p{
+    margin-bottom: var(--size-md);
+}
+
 .containerInfoUpcomingChampionships img{
-    width: 160px;
+    width: 125px;
     object-fit: contain;
 }
 
@@ -61,3 +74,6 @@
     color: var(--two-color);
 }
 
+[data-theme="dark"] .containerLojaInfo{
+    color: var(--two-color);
+}

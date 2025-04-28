@@ -32,6 +32,7 @@ const resources = {
             "toAccompany": "To accompany",
             "OfficialUniformAndAccessories": "Official Uniform and Accessories",
             "AccessTheStore": "Access the store",
+            "HighlightsOfTheWeek": "Highlights of the week",
             
         }
     },
@@ -65,6 +66,7 @@ const resources = {
             "toAccompany": "Acompanhar",
             "OfficialUniformAndAccessories": "Uniforme Oficial e Acessórios",
             "AccessTheStore": "Acessar a loja",
+            "HighlightsOfTheWeek": "Destaques da semana",
         }
     }
 };
