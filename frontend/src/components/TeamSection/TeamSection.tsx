@@ -12,10 +12,9 @@ const TeamSection = () => {
     {
       name: "Chello",
       position: "Meio-Campo",
-      imageUrl: "/assets/Players/player2.png",
+      imageUrl: "/assets/Players/Chelo.png",
       backgroundUrl: "/assets/backgrounds/bg2.jpg"
     },
-    // Mais jogadores...
   ];
 
   return (
