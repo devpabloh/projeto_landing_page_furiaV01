@@ -7,6 +7,7 @@ import { ThemeProvider } from './context/ThemeContext'
 
 /* pages - páginas */
 import Home from './pages/Home/Home'
+import Carrer from './pages/Carrer/Carrer'
 
 /* Componentes */
 import Header from './components/Header/Header'
@@ -29,7 +30,8 @@ function App() {
         <Header/>
         <Carousel images={images}/>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/home' element={<Home/>}/>
+          <Route path='/carrer' element={<Carrer/>}/>
         </Routes>
         <Footer/>
       </ThemeProvider>

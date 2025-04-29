@@ -17,7 +17,7 @@ interface NavbarItem {
 const navbarItems1: NavbarItem[] = [
     {
         text: "navbar.home",
-        path: "/"
+        path: "/home"
     },
     {
         text: "E-Sports",
@@ -29,7 +29,7 @@ const navbarItems1: NavbarItem[] = [
 const navbarItems2: NavbarItem[] = [
     {
         text: "navbar.carrer",
-        path: "/carreira"
+        path: "/carrer"
     },
     {
         text: "navbar.shop",
