@@ -57,7 +57,11 @@ const Navbar = () => {
                 </li>
                 {navbarItems2.map((item, index)=>(
                     <li key={index} className={styles.listItem}>
+                        {item.external ? (
                         <Link to={item.path} target="_blank" rel="noopener noreferrer">{t(item.text)}</Link>
+                    ) : (
+                        <Link to={item.path}>{t(item.text)}</Link>
+                    )}
                     </li>
                 ))}
                 <li className={styles.listItem}>

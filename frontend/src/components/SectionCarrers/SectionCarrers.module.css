@@ -1,0 +1,7 @@
+.containerInfor{
+    padding: 2rem;
+}
+
+.containerInfor h3, p, h1,h2{
+  margin: 1rem 0;
+}

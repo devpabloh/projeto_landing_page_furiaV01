@@ -62,7 +62,7 @@ const upcomingChampionshipsData: upcomingChampionshipsItem[] = [
 const UpcomingChampionships = ()=>{
     const { t } = useTranslation();
 
-    const [isHovering, setIsHovering] = useState(true);
+    const [isHovering, setIsHovering] = useState(false);
 
     return (
         <div className={styles.containerUpcomingChampionships}>
@@ -81,8 +81,8 @@ const UpcomingChampionships = ()=>{
             </div>
             <div className={styles.containerLoja}>
                 <div 
-                onMouseEnter={()=>setIsHovering(true)}
-                onMouseLeave={()=>setIsHovering(false)}
+                onMouseEnter={()=>setIsHovering(false)}
+                onMouseLeave={()=>setIsHovering(true)}
                 >
                     <img src={isHovering ? DarkUniform : LightUniform } alt="" className={styles.imageUniform} />
                 </div>

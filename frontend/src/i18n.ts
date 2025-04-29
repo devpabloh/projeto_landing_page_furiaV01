@@ -31,8 +31,15 @@ const resources = {
             "upcomingChampionshipsGroup": "Group",
             "toAccompany": "To accompany",
             "OfficialUniformAndAccessories": "Official Uniform and Accessories",
-            "AccessTheStore": "Access the store",
             "HighlightsOfTheWeek": "Highlights of the week",
+            "AccessTheStore": "Access the store",
+            "carrersTitle": "Carrers",
+            "joinTheFuria": "Join the Furia E-sports",
+            "sectionCarrersText": "We are lookin for talented and dedicated CS:GO players to join our professional e-sports team. if you have the skills, passion, and drive to competete at the highest level, we want to hear from you.",
+            "placeHolderName": "Name",
+            "placeHolderAge": "Age",
+            "placeHolderFile": "File",
+            "labelSubmit": "Submit",
             
         }
     },
@@ -67,6 +74,13 @@ const resources = {
             "OfficialUniformAndAccessories": "Uniforme Oficial e Acessórios",
             "AccessTheStore": "Acessar a loja",
             "HighlightsOfTheWeek": "Destaques da semana",
+            "carrersTitle": "Carreiras",
+            "joinTheFuria": "Junte-se à Fúria E-sports",
+            "sectionCarrersText": "Estamos procurando talentosos e dedicados jogadores de CS:GO para se juntar ao nosso time profissional de e-sports. Se você tem as habilidades, paixão e determinação para competir no nível mais alto, queremos ouvir de você.",
+            "placeHolderName": "Nome",
+            "placeHolderAge": "Idade",
+            "placeHolderFile": "Arquivo",
+            "labelSubmit": "Enviar",
         }
     }
 };
