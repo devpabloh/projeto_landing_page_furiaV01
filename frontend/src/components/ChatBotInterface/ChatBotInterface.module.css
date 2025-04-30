@@ -1,0 +1,122 @@
+.chatbotContainer {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chatbotHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--one-color);
+  color: white;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.chatbotMessages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 80%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.botMessage {
+  align-self: flex-start;
+  background-color: #f0f0f0;
+  border-bottom-left-radius: 5px;
+}
+
+.userMessage {
+  align-self: flex-end;
+  background-color: var(--three-color);
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+.messageContent {
+  margin-bottom: 5px;
+}
+
+.messageTime {
+  font-size: 10px;
+  text-align: right;
+  opacity: 0.7;
+}
+
+.chatbotInput {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.chatbotInput input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.chatbotInput button {
+  background-color: var(--three-color);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Tema escuro */
+[data-theme="dark"] .chatbotContainer {
+  background-color: var(--two-color);
+  color: var(--one-color);
+}
+
+[data-theme="dark"] .botMessage {
+  background-color: #333;
+  color: #fff;
+}
+
+[data-theme="dark"] .chatbotInput input {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}

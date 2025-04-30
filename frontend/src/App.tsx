@@ -13,16 +13,20 @@ import Carrer from './pages/Carrer/Carrer'
 import Header from './components/Header/Header'
 import Carousel from './components/Carousel/Carousel'
 import Footer from './components/Footer/Footer'
+import Esports from './pages/Esports/Esports'
+import ChatBotIcon from './components/ChatBotIcon/ChatBotIcon'
+
+/* imagem */
+import chatbotImage from './assets/IconChatBot/chatbotFuria.png'
 
 
 
 function App() {
   
   const images = [
-    { src: '/src/assets/carousel/shopFuria.webp', alt: 'Descrição da imagem 1' },
-    { src: '/src/assets/carousel/furiaTimeCS.jpg', alt: 'Descrição da imagem 2'},
-    { src: '/src/assets/carousel/furiaCS.png', alt: 'Descrição da imagem 3' },
-    // Adicione mais imagens conforme necessário
+    { src: '/src/assets/carousel/shopFuria.webp', alt: 'shop da Furia' },
+    { src: '/src/assets/carousel/furiaTimeCS.jpg', alt: 'Time de cs da Fúria'},
+    { src: '/src/assets/carousel/furiaCS.png', alt: 'cs Fúria' },
   ];
   return (
     <BrowserRouter>
@@ -32,7 +36,9 @@ function App() {
         <Routes>
           <Route path='/home' element={<Home/>}/>
           <Route path='/carrer' element={<Carrer/>}/>
+          <Route path='/esport' element={<Esports/>}/>
         </Routes>
+        <ChatBotIcon imageSrc={chatbotImage} />
         <Footer/>
       </ThemeProvider>
     </BrowserRouter>

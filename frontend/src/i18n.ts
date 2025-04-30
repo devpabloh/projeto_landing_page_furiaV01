@@ -40,6 +40,14 @@ const resources = {
             "placeHolderAge": "Age",
             "placeHolderFile": "File",
             "labelSubmit": "Submit",
+            "aboutUsTitle": "About Us",
+            "aboutUsText": "We are FURIA. An esports organization that was born from the desire to represent Brazil in CS and has achieved much more than that: we have expanded our leagues, competed for major titles, adopted new goals and gained a greater purpose. We are much more than competitive success.",
+            "aboutUsSocioculturalMovement": "We are a sociocultural movement",
+            "aboutUsSocioculturalMovementText": "Our history is one of pioneering, great achievements and tradition. Our present is one of desire, determination and strategy. The panther on our chest also represents our future of glory. Our pillars of performance, lifestyle, content, business, technology and social are the main constituents of the FURIA movement, which represents a unity that respects individualities and positively impacts the contexts in which it operates. We bring people together and fuel dreams inside and outside of games.",
+            "ourTeam": "Our team",
+            "ChatBotAlt": "Fury Chatbot Icon"
+            
+            
             
         }
     },
@@ -81,6 +89,13 @@ const resources = {
             "placeHolderAge": "Idade",
             "placeHolderFile": "Arquivo",
             "labelSubmit": "Enviar",
+            "aboutUsTitle": "Sobre nós",
+            "aboutUsText": "Somos FURIA. Uma organização de esports que nasceu do desejo de representar o Brasil no CS e conquistou muito mais que isso: expandimos nossas ligas, disputamos os principais títulos, adotamos novos objetivos e ganhamos um propósito maior. Somos muito mais que o sucesso competitivo.",
+            "aboutUsSocioculturalMovement": "Somos um movimento sociocultural",
+            "aboutUsSocioculturalMovementText": "Nossa história é de pioneirismo, grandes conquistas e tradição. Nosso presente é de desejo, garra e estratégia. A pantera estampada no peito estampa também nosso futuro de glória. Nossos pilares de performance, lifestyle, conteúdo, business, tecnologia e social são os principais constituintes do movimento FURIA, que representa uma unidade que respeita as individualidades e impacta positivamente os contextos em que se insere. Unimos pessoas e alimentamos sonhos dentro e fora dos jogos.",
+            "ourTeam": "Nossa equipe",
+            "ChatBotAlt": "Icone do Chatbot da fúria"
+            
         }
     }
 };

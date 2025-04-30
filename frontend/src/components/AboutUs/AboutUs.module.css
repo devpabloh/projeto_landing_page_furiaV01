@@ -1,0 +1,8 @@
+.containerAboutUs{
+  padding: var(--size-lg);
+}
+
+.containerAboutUs p{
+  text-align: justify;
+  text-indent: var(--size-lg);
+}
