@@ -2,8 +2,8 @@
   position: fixed;
   bottom: 80px;
   right: 10px;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: var(--three-color);
   display: flex;
@@ -21,7 +21,7 @@
 }
 
 .chatbotIcon {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
