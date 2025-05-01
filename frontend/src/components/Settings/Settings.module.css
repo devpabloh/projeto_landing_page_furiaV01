@@ -40,7 +40,6 @@
 }
 
 .settingsMenu::before{
-    content: '';
     position: absolute;
     top: 8px;
     left: 50%;
