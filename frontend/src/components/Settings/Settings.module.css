@@ -21,13 +21,13 @@
 
 .settingsButton img,
 .themeToggle img {
-    filter: invert(0%); /* Mantém a cor original no tema light */
+    filter: invert(0%); 
 }
 
 .settingsMenu{
-    position: absolute;
-    top: 80px;
-    right: 359px;
+    position: fixed;
+    top: 90px;
+    right: 235px;
     transform: translateX(-50%);
     background-color: #000;
     border-radius: var(--size-md);
