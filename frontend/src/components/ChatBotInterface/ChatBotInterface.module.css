@@ -31,13 +31,13 @@
   align-items: center;
   padding: 15px;
   background-color: var(--one-color);
-  color: white;
+  color: var(--two-color);
 }
 
 .closeButton {
   background: none;
   border: none;
-  color: white;
+  color: var(--two-color);
   font-size: 24px;
   cursor: pointer;
 }
@@ -67,7 +67,7 @@
 .userMessage {
   align-self: flex-end;
   background-color: var(--three-color);
-  color: white;
+  color: var(--one-color);
   border-bottom-right-radius: 5px;
 }
 
@@ -97,7 +97,7 @@
 
 .chatbotInput button {
   background-color: var(--three-color);
-  color: white;
+  color: var(--one-color);
   border: none;
   border-radius: 20px;
   padding: 10px 15px;
@@ -112,11 +112,11 @@
 
 [data-theme="dark"] .botMessage {
   background-color: #333;
-  color: #fff;
+  color: var(--two-color);
 }
 
 [data-theme="dark"] .chatbotInput input {
   background-color: #333;
-  color: #fff;
+  color: var(--two-color);
   border-color: #555;
 }
