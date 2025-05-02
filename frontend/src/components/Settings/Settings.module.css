@@ -1,3 +1,8 @@
+.settingsContainer {
+    position: relative;
+    display: inline-block;
+}
+
 .settingsButton{
     background: none;
     border: none;
@@ -7,7 +12,6 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.2s ease;
-    position: relative;
 }
 
 .settingsButton:hover{
@@ -25,9 +29,10 @@
 }
 
 .settingsMenu{
-    position: fixed;
-    top: 90px;
-    right: 235px;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    right: auto;
     transform: translateX(-50%);
     background-color: #000;
     border-radius: var(--size-md);
@@ -35,13 +40,12 @@
     padding: var(--size-md);
     min-width: 200px;
     z-index: 1000;
-    margin-top: 8px;
-    
 }
 
 .settingsMenu::before{
+    content: ''; /* Adicione esta linha que está faltando */
     position: absolute;
-    top: 8px;
+    top: -8px; /* Altere para -8px para posicionar acima do menu */
     left: 50%;
     transform: translateX(-50%);
     width: 0;
@@ -122,27 +126,25 @@
 /* Responsividade */
 @media (max-width: 768px) {
     .settingsMenu {
-        position: fixed;
-        top: auto;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        border-radius: 8px 8px 0 0;
+        position: absolute;
+        top: calc(100% + 8px);
+        bottom: auto;
+        left: 50%;
+        right: auto;
+        width: 80%;
+        max-width: 300px;
+        transform: translateX(-50%);
+        border-radius: var(--size-md);
         margin-top: 0;
-        animation: slideUp 0.3s ease;
+        animation: fadeIn 0.3s ease;
     }
     
-    .settingsMenu::before {
-        display: none;
-    }
-    
-    @keyframes slideUp {
+    @keyframes fadeIn {
         from {
-            transform: translateY(100%);
+            opacity: 0;
         }
         to {
-            transform: translateY(0);
+            opacity: 1;
         }
     }
 }
