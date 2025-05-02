@@ -63,7 +63,7 @@
 }
 
 [data-theme="dark"] .containerGames {
-  background-color: var(--four-color);
+  background-color: var(--one-color);
   color: var(--two-color);
 }
 
