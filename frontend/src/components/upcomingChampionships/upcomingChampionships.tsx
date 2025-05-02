@@ -70,7 +70,7 @@ const UpcomingChampionships = ()=>{
                 <h2>{t("upcomingChampionshipsTitle")}</h2>
                 <div>
                     {upcomingChampionshipsData.map((item, index)=>(
-                        <div key={index} >
+                        <div key={index} className={styles.containerlogoChampionship}>
                             <img src={item.logoChampionship} alt="" />
                             <p>{t(item.date)} {t(item.moth)}</p>
                             <p>{t(item.classification)}: {t(item.group)}: {item.lyrics}</p>

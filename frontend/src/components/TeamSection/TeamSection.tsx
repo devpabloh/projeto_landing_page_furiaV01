@@ -20,31 +20,31 @@ const TeamSection = () => {
   const players = [
     {
       name: "Fallen",
-      position: "Atacante",
+      position: "Gabriel Toledo",
       imageUrl: fallen,
       backgroundUrl: background
     },
     {
       name: "Chello",
-      position: "Meio-Campo",
+      position: "Marcelo Cespedes",
       imageUrl: chello,
       backgroundUrl: background
     },
     {
       name: "KScerato",
-      position: "atacante",
+      position: "Kaike Cerato",
       imageUrl: kscerato,
       backgroundUrl: background
     },
     {
       name: "Skullz",
-      position: "atacante",
+      position: "Felipe Medeiros",
       imageUrl: Skullz,
       backgroundUrl: background
     },
     {
       name: "Yuurih",
-      position: "atacante",
+      position: "Yuri Boian",
       imageUrl: yuurih,
       backgroundUrl: background
     }

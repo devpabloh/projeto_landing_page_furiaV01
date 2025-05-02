@@ -87,3 +87,51 @@
 [data-theme="dark"].imageUniform{
     filter: drop-shadow(0px 0px 8px rgba(255, 255, 0, 0.7));
 }
+
+@media (max-width: 768px){
+    .containerUpcomingChampionships{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .containerInfoUpcomingChampionships{
+        width: 100%;
+    }
+
+
+}
+
+
+@media (max-width: 320px){
+    .containerUpcomingChampionships {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    
+    .containerInfoUpcomingChampionships {
+        width: 100%;
+    }
+    
+    .containerInfoUpcomingChampionships div {
+        height: auto;
+        padding: 1rem 0;
+    }
+    
+    .containerInfoUpcomingChampionships div div {
+        width: 100%;
+        height: auto;
+        min-height: 120px;
+    }
+    
+    .containerLoja {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .imageUniform {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+}

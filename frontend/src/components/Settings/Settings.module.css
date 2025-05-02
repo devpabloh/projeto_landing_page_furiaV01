@@ -81,7 +81,11 @@
     cursor: pointer;
     width: 100%;
     transition: background-color 0.2s;
-    
+}
+
+.themeToggle img{
+    background: #fff;
+    border-radius: 60%;
 }
 
 .themeToggle:hover {

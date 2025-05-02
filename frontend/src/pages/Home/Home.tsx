@@ -2,14 +2,15 @@ import HighlightsOfTheWeek from "../../components/HighlightsOfTheWeek/Highlights
 
 import UpcomingChampionships from "../../components/upcomingChampionships/upcomingChampionships"
 
+import styles from './Home.module.css'
+
 const Home = () => {
     return (
-        <main>
+        <main className={styles.containerHome}>
             <HighlightsOfTheWeek/>
             <section>
                 <UpcomingChampionships/>
             </section>
-            
         </main>
     )
 }

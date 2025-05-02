@@ -105,7 +105,7 @@ const PlayerCard: React.FC<PlayerCardProps> = ({ name, position, imageUrl, backg
         />
         <div className={styles.cardContent}>
           <h3>{name}</h3>
-          <p>Posição: {position}</p>
+          <p>{position}</p>
         </div>
       </div>
     </div>

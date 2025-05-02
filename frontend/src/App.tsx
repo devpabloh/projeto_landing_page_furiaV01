@@ -34,7 +34,7 @@ function App() {
         <Header/>
         <Carousel images={images}/>
         <Routes>
-          <Route path='/home' element={<Home/>}/>
+          <Route path='/' element={<Home/>}/>
           <Route path='/carrer' element={<Carrer/>}/>
           <Route path='/esport' element={<Esports/>}/>
         </Routes>

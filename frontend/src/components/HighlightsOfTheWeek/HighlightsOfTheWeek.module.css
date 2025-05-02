@@ -44,3 +44,80 @@
   align-items: center;
   flex-direction: center;
 }
+
+@media (max-width: 320px){
+  .containerHighlightsOfTheWeek{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerGeneral{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Adicionando suporte para tema escuro */
+[data-theme="dark"] .containerHighlightsOfTheWeek h2 {
+  color: var(--two-color);
+}
+
+[data-theme="dark"] .containerGames {
+  background-color: var(--four-color);
+  color: var(--two-color);
+}
+
+[data-theme="dark"] .cardGames img {
+  filter: drop-shadow(0px 0px 8px rgba(255, 255, 0, 0.7));
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 768px) {
+  .containerHighlightsOfTheWeek {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 1rem;
+    margin-top: 20px;
+    overflow: visible;
+  }
+
+  .containerGeneral {
+    flex-wrap: wrap;
+    
+  }
+
+  .containerGames {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .containerHighlightsOfTheWeek {
+    height: auto;
+    padding: 0.5rem;
+    margin-top: 20px;
+    overflow: visible;
+  }
+
+  .containerGeneral {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containerGames {
+    width: 90%;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+  }
+
+  .cardGames {
+    flex-direction: column;
+  }
+
+  .gameInfo {
+    flex-direction: column;
+  }
+}
