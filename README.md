@@ -159,4 +159,38 @@ O chatbot responde a perguntas sobre:
 
 O tema pode ser alterado através do componente Settings, que utiliza o ThemeContext para gerenciar o estado do tema.
 
+## Visual das páginas
+
+### Home
+- Dark
+![image](https://github.com/user-attachments/assets/136e1a7e-d5ce-4e58-80c5-8409d3ede395)
+
+- Light
+![image](https://github.com/user-attachments/assets/fee7c8b2-6146-4279-81e1-007337e5d0a1)
+
+
+### E-sports
+- Dark
+![image](https://github.com/user-attachments/assets/e398a672-464b-4496-be85-ab6064e5675e)
+
+- Light
+![image](https://github.com/user-attachments/assets/462eea61-10c7-4381-9ed3-380dcd17c54d)
+
+
+### Carreira
+- Dark
+![image](https://github.com/user-attachments/assets/4748571a-5a73-447e-abda-83b71d617fba)
+
+- Light
+![image](https://github.com/user-attachments/assets/3e9b93a8-82db-422d-9fbc-33a78a891d87)
+
+
+### Chatbot
+
+- Dark
+![image](https://github.com/user-attachments/assets/50ace859-6852-4ed8-b498-4a6b7f6a242b)
+
+- Light
+![image](https://github.com/user-attachments/assets/e78ad65c-5b87-4e48-b7e2-438c061a4a98)
+
 Desenvolvido com ❤️ para Furia E-sports.
