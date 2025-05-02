@@ -21,6 +21,7 @@ const ChatBotInterface: React.FC<ChatBotInterfaceProps> = ({ onClose }) => {
   ]);
   
   const [inputText, setInputText] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -31,7 +32,7 @@ const ChatBotInterface: React.FC<ChatBotInterfaceProps> = ({ onClose }) => {
     scrollToBottom();
   }, [messages]);
 
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     if (inputText.trim() === "") return;
     
     const userMessage: Message = {
@@ -42,16 +43,39 @@ const ChatBotInterface: React.FC<ChatBotInterfaceProps> = ({ onClose }) => {
     
     setMessages(prev => [...prev, userMessage]);
     setInputText("");
+    setIsLoading(true);
     
-    setTimeout(() => {
+    try {
+      const response = await fetch('http://localhost:3000/chatbot', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: userMessage.text }),
+      });
+      
+      const data = await response.json();
+      
       const botResponse: Message = {
-        text: "Obrigado por sua mensagem! Nossa equipe irá analisá-la em breve.",
+        text: data.message,
         isBot: true,
         timestamp: new Date()
       };
       
       setMessages(prev => [...prev, botResponse]);
-    }, 1000);
+    } catch (error) {
+      console.error('Erro ao enviar mensagem:', error);
+      
+      const errorMessage: Message = {
+        text: "Desculpe, tive um problema ao processar sua mensagem. Por favor, tente novamente mais tarde.",
+        isBot: true,
+        timestamp: new Date()
+      };
+      
+      setMessages(prev => [...prev, errorMessage]);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -75,6 +99,15 @@ const ChatBotInterface: React.FC<ChatBotInterfaceProps> = ({ onClose }) => {
             </div>
           </div>
         ))}
+        {isLoading && (
+          <div className={`${styles.message} ${styles.botMessage}`}>
+            <div className={styles.loadingDots}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        )}
         <div ref={messagesEndRef} />
       </div>
       
@@ -85,8 +118,11 @@ const ChatBotInterface: React.FC<ChatBotInterfaceProps> = ({ onClose }) => {
           onChange={(e) => setInputText(e.target.value)}
           placeholder="Digite sua mensagem..."
           onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
+          disabled={isLoading}
         />
-        <button onClick={handleSendMessage}>Enviar</button>
+        <button onClick={handleSendMessage} disabled={isLoading}>
+          Enviar
+        </button>
       </div>
     </div>
   );

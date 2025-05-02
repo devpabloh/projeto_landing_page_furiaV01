@@ -13,7 +13,7 @@ export const handleChatbotRequest = async (req: Request, res: Response) => {
       return res.status(400).json({ error: 'Mensagem não fornecida' });
     }
     
-    // Usando a implementação simples em vez da API do Hugging Face
+    
     const response = getSimpleResponse(message);
     
     return res.status(200).json({ message: response });
