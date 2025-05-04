@@ -88,7 +88,7 @@ const UpcomingChampionships = ()=>{
                 </div>
                 <div className={styles.containerLojaInfo}>
                     <p>{t("OfficialUniformAndAccessories")}</p>
-                    <a href="">{t("AccessTheStore")}</a>
+                    <a href="https://www.furia.gg/" target="_blank" rel="noopener noreferrer">{t("AccessTheStore")}</a>
                 </div>
             </div>
         </div>
