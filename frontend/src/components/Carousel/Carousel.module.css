@@ -127,3 +127,10 @@
 [data-theme="dark"] .arrow:hover {
   background: rgba(255, 255, 255, 0.8);
 } 
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 300px;
+    width: 100%;
+  }
+}

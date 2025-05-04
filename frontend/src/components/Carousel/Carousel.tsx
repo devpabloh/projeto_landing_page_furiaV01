@@ -36,7 +36,7 @@ const Carousel = ({ images }) => {
             key={index} 
             className={`${styles.slide} ${index === currentIndex ? styles.active : ''}`}
           >
-            <a href="https://www.furia.gg/" target='_blank'>
+            <a href="https://www.furia.gg/" target='_blank' rel="noopener">
               <img 
                 src={image.src} 
                 alt={image.alt || t('carousel.imageAlt', { index: index + 1 })} 

@@ -10,7 +10,7 @@ const Footer = ()=>{
     <footer className={styles.containerFooter}>
       <p>&copy; Fúria E-Sports</p>
       <div className={styles.containerRedesSociais}>
-        <a href="https://www.instagram.com/furiagg/?hl=pt-br" target="_blank"><img src={instagram} alt="" /></a>
+        <a href="https://www.instagram.com/furiagg/?hl=pt-br" target="_blank" rel="noopener"><img src={instagram} alt="Instagram fúria" /></a>
       </div>
       
     </footer>

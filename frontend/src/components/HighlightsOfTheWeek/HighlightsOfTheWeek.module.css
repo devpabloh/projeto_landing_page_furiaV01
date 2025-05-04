@@ -45,7 +45,7 @@
   flex-direction: center;
 }
 
-@media (max-width: 320px){
+/* @media (max-width: 320px){
   .containerHighlightsOfTheWeek{
     display: flex;
     flex-direction: column;
@@ -55,7 +55,9 @@
     display: flex;
     flex-direction: column;
   }
-}
+
+  
+} */
 
 /* Adicionando suporte para tema escuro */
 [data-theme="dark"] .containerHighlightsOfTheWeek h2 {
@@ -108,7 +110,6 @@
   }
 
   .containerGames {
-    width: 90%;
     padding: 0.5rem;
     margin-bottom: 10px;
   }

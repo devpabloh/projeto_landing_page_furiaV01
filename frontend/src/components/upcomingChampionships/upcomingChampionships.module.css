@@ -89,6 +89,7 @@
 }
 
 @media (max-width: 768px){
+
     .containerUpcomingChampionships{
         display: flex;
         flex-direction: column;
@@ -96,6 +97,10 @@
     }
 
     .containerInfoUpcomingChampionships{
+        width: 75%;
+    }
+
+    .containerInfoUpcomingChampionships div div{
         width: 100%;
     }
 
@@ -110,7 +115,7 @@
     }
     
     .containerInfoUpcomingChampionships {
-        width: 100%;
+        width: 80%;
     }
     
     .containerInfoUpcomingChampionships div {

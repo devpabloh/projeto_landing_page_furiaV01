@@ -21,7 +21,7 @@ const games:GamesItem[] = [
     championship: "BLAST PREMIER",
     teamOne: furiaLogo,
     teamTwo: loudLogo,
-    alt: "",
+    alt: " liga BLAST PREMIER, furia vs loud, 19/04, 14:00",
     date: "19/04",
     time: "14:00"
   },
@@ -29,7 +29,7 @@ const games:GamesItem[] = [
     championship: "ESL PRO LEAGUE",
     teamOne: furiaLogo,
     teamTwo: loudLogo,
-    alt: "",
+    alt: " liga ESL PRO LEAGUE, furia vs loud, 19/04, 14:00",
     date: "19/04",
     time: "14:00"
   },
@@ -37,7 +37,7 @@ const games:GamesItem[] = [
     championship: "BSUPR",
     teamOne: furiaLogo,
     teamTwo: loudLogo,
-    alt: "",
+    alt: " liga BSUPR, furia vs loud, 19/04, 14:00",
     date: "19/04",
     time: "14:00"
   },
@@ -45,7 +45,7 @@ const games:GamesItem[] = [
     championship: "BLAST PREMIER",
     teamOne: furiaLogo,
     teamTwo: loudLogo,
-    alt: "",
+    alt: "Liga BLAST PREMIER, furia vs loud, 19/04, 14:00",
     date: "19/04",
     time: "14:00"
   },

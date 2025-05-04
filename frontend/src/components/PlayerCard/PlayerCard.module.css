@@ -90,3 +90,4 @@
 [data-theme="dark"] .card:hover .playerImage {
   filter: drop-shadow(0 0 15px var(--three-color));
 }
+
