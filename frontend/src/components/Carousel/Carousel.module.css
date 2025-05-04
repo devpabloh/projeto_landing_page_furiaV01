@@ -149,42 +149,11 @@
 
 @media (min-width: 1440px) {
   .carousel{
-    width: 100%;
-  }
-
-  .carouselInner{
-    width: 100%;
-  }
-  
-  .slide{
-    width: 100%;
-    max-width: 100vw;
-    
+    height: 520px;
   }
 
   .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-  }
-  
-  
-  .activeImage {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    object-position: center;
-    filter: none;
-    transition: filter 0.5s ease;
-  }
-  
-  .inactiveImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-    filter: blur(5px) brightness(0.7);
-    transition: filter 0.5s ease;
+    object-position: 50% 27%;
   }
 }
