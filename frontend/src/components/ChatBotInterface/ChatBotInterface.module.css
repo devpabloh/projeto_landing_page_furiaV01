@@ -120,3 +120,11 @@
   color: var(--two-color);
   border-color: #555;
 }
+
+@media (max-width: 320px) {
+  .chatbotContainer {
+    bottom: 95px;
+    right: 20px;
+    width: 280px;
+  }
+}
