@@ -139,7 +139,7 @@ Instale as dependências utilizando o comando npm install
 
 4. Inicie o servidor:
 
-npm run dev
+npm start ou npm run start
 
 5. O backend estará disponível em http://localhost:3000
 
