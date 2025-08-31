@@ -15,6 +15,10 @@ const Carousel = ({ images }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { t } = useTranslation();
 
+  // Debug: verificar se as imagens estão sendo recebidas
+  console.log('Carousel images:', images);
+  console.log('Current index:', currentIndex);
+
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) => 
       prevIndex === 0 ? images.length - 1 : prevIndex - 1

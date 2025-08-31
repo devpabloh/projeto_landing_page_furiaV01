@@ -31,6 +31,12 @@ function App() {
     { src: furiaTimeCS, alt: 'Time de cs da Fúria'},
     { src: furiaCS, alt: 'cs Fúria' },
   ];
+
+  // Debug: verificar se as imagens estão sendo importadas
+  console.log('App images:', images);
+  console.log('shopFuria:', shopFuria);
+  console.log('furiaTimeCS:', furiaTimeCS);
+  console.log('furiaCS:', furiaCS);
   return (
     <BrowserRouter>
       <ThemeProvider>
