@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 /* CSS */
-import styles from "./UpcomingChampionships.module.css";
+import styles from "./upcomingChampionships.module.css";
 
 /* Tradução */
 import { useTranslation } from "react-i18next";

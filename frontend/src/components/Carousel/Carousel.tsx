@@ -2,7 +2,16 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './Carousel.module.css';
 
-const Carousel = ({ images }) => {
+interface Image {
+  src: string;
+  alt?: string;
+}
+
+interface CarouselProps {
+  images: Image[];
+}
+
+const Carousel = ({ images }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { t } = useTranslation();
 
@@ -18,7 +27,7 @@ const Carousel = ({ images }) => {
     );
   };
 
-  const goToSlide = (index) => {
+  const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
 
@@ -31,7 +40,7 @@ const Carousel = ({ images }) => {
   return (
     <div className={styles.carousel}>
       <div className={styles.carouselInner}>
-        {images.map((image, index) => (
+        {images.map((image: Image, index: number) => (
           <div 
             key={index} 
             className={`${styles.slide} ${index === currentIndex ? styles.active : ''}`}
@@ -64,7 +73,7 @@ const Carousel = ({ images }) => {
       </button>
       
       <div className={styles.indicators}>
-        {images.map((_, index) => (
+        {images.map((_: Image, index: number) => (
           <button
             key={index}
             className={`${styles.indicator} ${index === currentIndex ? styles.activeIndicator : ''}`}

@@ -18,15 +18,18 @@ import ChatBotIcon from './components/ChatBotIcon/ChatBotIcon'
 
 /* imagem */
 import chatbotImage from './assets/IconChatBot/chatbotFuria.png'
+import shopFuria from './assets/carousel/shopFuria.webp'
+import furiaTimeCS from './assets/carousel/furiaTimeCS.jpg'
+import furiaCS from './assets/carousel/furiaCS.png'
 
 
 
 function App() {
   
   const images = [
-    { src: '/src/assets/carousel/shopFuria.webp', alt: 'shop da Furia' },
-    { src: '/src/assets/carousel/furiaTimeCS.jpg', alt: 'Time de cs da Fúria'},
-    { src: '/src/assets/carousel/furiaCS.png', alt: 'cs Fúria' },
+    { src: shopFuria, alt: 'shop da Furia' },
+    { src: furiaTimeCS, alt: 'Time de cs da Fúria'},
+    { src: furiaCS, alt: 'cs Fúria' },
   ];
   return (
     <BrowserRouter>

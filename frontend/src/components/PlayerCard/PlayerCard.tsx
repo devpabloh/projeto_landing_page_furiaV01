@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import styles from './PlayerCard.module.css';
 
 interface PlayerCardProps {
@@ -10,7 +10,6 @@ interface PlayerCardProps {
 
 const PlayerCard: React.FC<PlayerCardProps> = ({ name, position, imageUrl, backgroundUrl }) => {
   const cardRef = useRef<HTMLDivElement>(null);
-  const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!cardRef.current) return;
@@ -37,14 +36,12 @@ const PlayerCard: React.FC<PlayerCardProps> = ({ name, position, imageUrl, backg
   };
   
   const handleMouseEnter = () => {
-    setIsHovering(true);
     if (cardRef.current) {
       cardRef.current.classList.add(styles.moving);
     }
   };
   
   const handleMouseLeave = () => {
-    setIsHovering(false);
     if (cardRef.current) {
       cardRef.current.classList.remove(styles.moving);
       cardRef.current.style.transform = '';
